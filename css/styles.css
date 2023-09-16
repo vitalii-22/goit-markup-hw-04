@@ -117,15 +117,28 @@ img {
 }
 
 .main-list {
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
   background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
   gap: 48px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .main-list-container {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   gap: 48px;
 }
