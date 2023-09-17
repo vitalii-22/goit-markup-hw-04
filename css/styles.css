@@ -453,15 +453,17 @@ img {
   font-weight: 500;
   line-height: 1, 5em;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .icons-footer {
   display: flex;
   gap: 16px;
-}
-
-.icons-footer-wrapper {
 }
 
 .icons-footer-list {
