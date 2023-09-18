@@ -197,6 +197,8 @@ img {
   background-color: #404bbf;
 }
 
+/*  Section-our-features   */
+
 .features-wrapper {
   padding: 120px 0;
 }
@@ -224,14 +226,14 @@ img {
 }
 
 .wrapper-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
-}
-
-.icons-list {
-  margin: 24px 100px;
 }
 
 .features-list {
@@ -248,6 +250,10 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+
+/*  /Section-our-features   */
+
+/*  Section-our-team */
 
 .our-team-title {
   background-color: #f4f4fd;
@@ -293,20 +299,21 @@ img {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
-  border-radius: 50px;
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list:hover {
+.contacts-list:hover,
+.contacts-list:active {
   background-color: #404bbf;
 }
 
 .wrapeper-contacts {
   display: flex;
   gap: 24px;
-  padding-left: 16px;
+  justify-content: center;
 }
 
 .icons {
@@ -334,6 +341,10 @@ img {
   margin-bottom: 8px;
 }
 
+/*  /Section-our-team */
+
+/*  Section-portfolio */
+
 .portfolio-wrapper {
   display: flex;
   flex-direction: column;
@@ -351,10 +362,11 @@ img {
 .wrapper-list {
   background: #fff;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wrapper-list:hover .overlay {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 
 .wrapper-list:hover {
@@ -373,7 +385,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5em;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   letter-spacing: 0.02em;
   background-color: #4d5ae5;
   position: absolute;
@@ -413,6 +425,10 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+
+/* / Section-portfolio */
+
+/*   Footer sections */
 
 .footer-wrapper {
   display: flex;
@@ -484,3 +500,5 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*   /Footer sections */
